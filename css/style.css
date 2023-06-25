@@ -31,3 +31,11 @@ img{
 .box-stories{
     display: flex;
 }
+
+.card-title-seguidores{
+    font-size: 12px;
+}
+
+.card-description-seguidores{
+    font-size: 10px;
+}
