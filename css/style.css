@@ -1,93 +1,33 @@
-body {
-  margin: 0px;
-  padding: 0px;
+.box-logo-instagran{
+    width: 100px;
+    height: 45px;
 }
 
-.box-menu-lateral {
-  width: 16vw;
-  height: 100vh;
-  background-color: rgb(79 70 229);
-  opacity: 1;
- 
+img{
+   width: 100%; 
+   height: auto;
+}
+.box-menu-principal-web .titulo-link{
+    margin: 30px 0px 30px 0px;
 }
 
-#meu-elemento {
-  opacity: 1;
-  transition: opacity 1s;
-}
-.box-navbar {
-  width: 84vw;
-  height: 56px;
-  background-color: #ffffff;
-  border: solid 1.5px;
-  border-color: rgba(0, 0, 0, 0.212);
-  border-top: none;
-  border-left: none;
-  border-right: none;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+#first-page{
+    font-weight: 700;
 }
 
-.box-menu_hamburger{
-width: 40px;
-height: 40px;
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-margin-left: 32px;
-
+.box-foto-perfil{
+    width: 50px;
+    height: 50px;
 }
 
-.menu-hamburger{
-  width: 20px;
-  height: 1px;
-  background-color: #8f8f8f
- 
+.stories-timeline{
+    display: flex;
+    flex-direction: column;
+}
+.image-stories-perfil{
+    border-radius: 100px;
 }
 
-#menu-key{
-  margin-top: 4px;
-  margin-bottom: 4px;
-}
-
-.perfil-notification{
-  display: flex;
-  align-items: center;
-  padding: 0px 20px;
-}
-
-.box-img{
-  width: 40px;
-  height: 40px;
-
-}
-
-.box-img img{
-  width: 100%;
-  height: auto;
-  border-radius: 100px;
-}
-
-.pipe{
-    width: 1px;
-    height: 20px;
-    background-color: rgba(0, 0, 0, 0.212);
-    margin-right: 32px;
-}
-
-.visible{
-  display: block;
-}
-
-.visible-none{
-  display: none;
-}
-
-.full-screen{
-  width: 100vw!important;
+.box-stories{
+    display: flex;
 }

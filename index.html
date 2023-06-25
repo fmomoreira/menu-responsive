@@ -1,81 +1,89 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="en">
   <head>
-    <title>Admin - Gauss</title>
+    <title>Instaclone</title>
     <!-- Required meta tags -->
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS v5.2.1 -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT"
-      crossorigin="anonymous"
-    />
-
-    <link rel="stylesheet" href="./css/style.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
   </head>
-
   <body>
-    <header>
-      <div class="box-menu-lateral"></div>
-      <div class="box-navbar">
-        <div class="menu-search" onclick="menuResponsive()">
-          <div class="box-menu_hamburger">
-            <div class="menu-hamburger"></div>
-            <div class="menu-hamburger" id="menu-key"></div>
-            <div class="menu-hamburger"></div>
+      <div class="row">
+        <div class="col-2">
+          <div class="box-logo-instagran">
+            <img src="./image/instagran.png" alt="logo instagran">
           </div>
-        </div>
-        <div class="perfil-notification">
-          <div class="pipe"></div>
-          <div class="box-img">
-            <img src="./image/perfil.jpeg" alt="foto de perfil do usuario" />
+          <div class="box-menu-principal-web">
+            <div class="titulo-link">
+              <span id="first-page">Página inicial</span>
+            </div>  
+            <div class="titulo-link">
+              <span>Pesquisar</span>
+            </div> 
+            <div class="titulo-link">
+              <span>Explorar</span>
+            </div>  
+            <div class="titulo-link">
+              <span>Reels</span>
+            </div>  
+            <div class="titulo-link">
+              <span>Mensagem</span>
+            </div>  
+            <div class="titulo-link">
+              <span>Notificações</span>
+            </div>  
+              
           </div>
+          
         </div>
+        <div class="col-8">
+          <div class="box-stories">
+            <div class="stories-timeline">
+              <div class="box-foto-perfil">
+                <img class="image-stories-perfil" src="./image/fotoperfil.PNG" alt="foto perfil stories">
+              </div>
+             
+              <span>Felipe Moreira</span>
+            </div>
+            <div class="stories-timeline">
+              <div class="box-foto-perfil">
+                <img class="image-stories-perfil" src="./image/fotoperfil.PNG" alt="foto perfil stories">
+              </div>
+             
+              <span>Felipe Moreira</span>
+            </div>
+            <div class="stories-timeline">
+              <div class="box-foto-perfil">
+                <img class="image-stories-perfil" src="./image/fotoperfil.PNG" alt="foto perfil stories">
+              </div>
+             
+              <span>Felipe Moreira</span>
+            </div>
+            <div class="stories-timeline">
+              <div class="box-foto-perfil">
+                <img class="image-stories-perfil" src="./image/fotoperfil.PNG" alt="foto perfil stories">
+              </div>
+             
+              <span>Felipe Moreira</span>
+            </div>
+            <div class="stories-timeline">
+              <div class="box-foto-perfil">
+                <img class="image-stories-perfil" src="./image/fotoperfil.PNG" alt="foto perfil stories">
+              </div>
+             
+              <span>Felipe Moreira</span>
+            </div>
+          </div>
+
+
+        </div>
+        <div class="col-2">3</div>
       </div>
-    </header>
-    <main></main>
-    <footer>
-      <!-- place footer here -->
-    </footer>
-    <!-- Bootstrap JavaScript Libraries -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
-      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
-      crossorigin="anonymous"
-    ></script>
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js"
-      integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz"
-      crossorigin="anonymous"
-    ></script>
-
-    <script>
-      function openAndCloseMenu(menu, nav) {
-        var isVisible = menu.classList.contains("visible");
-
-        if (isVisible) {
-          menu.classList.remove("visible");
-          menu.classList.add("visible-none");
-          nav.classList.add("full-screen");
-        } else {
-          menu.classList.remove("visible-none");
-          menu.classList.add("visible");
-          nav.classList.remove("full-screen");
-        }
-      }
-
-      function menuResponsive() {
-        let menuLateral = document.querySelector(".box-menu-lateral");
-        let navbarSeach = document.querySelector(".box-navbar");
-        openAndCloseMenu(menuLateral, navbarSeach);
-      }
-    </script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   </body>
 </html>
